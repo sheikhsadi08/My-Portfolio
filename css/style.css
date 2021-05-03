@@ -55,7 +55,7 @@ section {
     background: #333;
     color: #fff;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-size: 2rem;
     border-radius: 5rem;
 }
@@ -67,6 +67,7 @@ section {
 
 .btn:hover {
     background: var(--yellow);
+    color: black;
 }
 
 .heading {
@@ -134,12 +135,13 @@ header .navbar ul li a {
     margin: 1.5rem 0;
     background: #333;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     border-radius: 5rem;
 }
 
 header .navbar ul li a:hover {
     background: var(--yellow);
+    color: black;
 }
 
 #menu {
@@ -189,7 +191,8 @@ header .navbar ul li a:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    padding-top: 6rem;
 }
 
 .about .row .info {
@@ -287,25 +290,107 @@ header .navbar ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     padding: 2rem 0;
+    box-sizing: border-box;
 }
 
 .portfolio .box-container .box {
-    height: 20rem;
-    width: 30rem;
     border-radius: 1rem;
     margin: 2rem;
     overflow: hidden;
     cursor: pointer;
+    box-sizing: content-box;
+    
 }
 
 .portfolio .box-container .box img {
-    height: 100%;
-    width: 100%;
+    width: 28rem;
+    height: 17rem;
+    border-radius: 1rem;
 }
 
-.portfolio .box-container .box:hover img {
-    transform: scale(1.2);
+.portfolio .box-container .box:hover {
+    transform: scale(1.1);
 }
+.portfolio .box-container h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contact .row {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row .content .title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    font-weight: normal;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #333336;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+    
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+
+
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.contact .row .content .info i{
+   padding-right: 1rem;
+   color: var(--yellow); 
+}
+
+
+
+.top {
+    position: fixed;
+    bottom: 4rem;
+    right: 1.5rem;
+    z-index: 100;
+
+}
+
+
 
 
 
@@ -373,11 +458,19 @@ header .navbar ul li a:hover {
         margin: 0 3rem;
     }
 
+    .about .row {
+        padding-bottom: 8rem;
+    }
+
     .about .row .counter .box {
         width: 70%;
     }
 
     .education .box-container .box {
         width: 80%;
+    }
+
+    .contact .row form {
+        margin: 3rem 0;
     }
 }
