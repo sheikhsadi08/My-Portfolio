@@ -29,7 +29,7 @@
 <body>
     
     <!-- header section starts -->
-    <header class="animate__animated animate__backInLeft">
+    <header class="animate__animated animate__backInLeft animate__slow">
         <div class="user">
             <img src="./images/profile.JPG" alt="">
             <h3 class="name">Sheikh Sadi</h3>
@@ -40,7 +40,7 @@
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
-                <li><a href="#education">education</a></li>
+                <li><a href="#skill-bar">skills</a></li>
                 <li><a href="#portfolio">portfolio</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
@@ -52,7 +52,7 @@
 
 
     <!-- home section starts -->
-        <section class="animate__animated animate__lightSpeedInRight home" id="home">
+        <section class="wow animate__animated animate__slideInRight animate__slow home" id="home">
             <h3>HI THERE !</h3>
             <h1>I'M <span>Sheikh Sadi</span></h1>
             <p>I don’t just build websites, I build websites that SELLS.</p>
@@ -67,14 +67,14 @@
 
             <div class="row">
 
-                <div class="info">
+                <div class="wow animate__animated animate__bounceInDown info">
                     <h3> <span>Name : </span>Sheikh Sadi</h3>
                     <h3> <span>Age : </span>26</h3>
                     <h3> <span>Language : </span>Bangla, English</h3>
                     <a href="https://drive.google.com/u/0/uc?id=1V9FugltAOlMdTWGBGiO4qiXFRqGxCneW&export=download"><button class="btn">Download CV <i class="fas fa-download"></i></button></a>
                 </div>
 
-                <div class="wow animate__animated animate__backInRight counter">
+                <div class="wow animate__animated animate__bounceInUp counter">
         
                     <div class="box">
                         <span>2+</span>
@@ -102,7 +102,7 @@
     <!-- about section ends -->
 
     <!-- education section starts -->
-        <section class="education" id="education">
+        <!-- <section class="education" id="education">
             <h1 class="heading">My <span>Education</span></h1>
 
             <div class="box-container">
@@ -142,27 +142,54 @@
                     <h3>Fullstack Web Development</h3>
                 </div>
             </div>
-        </section>
+        </section> -->
     <!-- education section ends -->
+
+    <!-- Skills Section -->
+        <section class="skill-bar" id="skill-bar">
+            <h1 class="heading">My <span>Skills</span></h1>
+
+            <div class="bar-section">
+                <p class="wow animate__animated animate__slideInRight">HTML</p>
+                <div class="wow animate__animated animate__slideInLeft animate__slower container">
+                    <div class="skills html">93%</div>
+                </div>
+
+                <p class="wow animate__animated animate__slideInLeft">CSS</p>
+                <div class="wow animate__animated animate__slideInRight animate__slower container">
+                    <div class="skills css">88%</div>
+                </div>
+
+                <p class="wow animate__animated animate__slideInRight">JavaScript</p>
+                <div class="wow animate__animated animate__slideInLeft animate__slower container">
+                    <div class="skills js">85%</div>
+                </div>
+
+                <p class="wow animate__animated animate__slideInLeft">React</p>
+                <div class="wow animate__animated animate__slideInRight animate__slower container">
+                    <div class="skills php">80%</div>
+                </div>
+            </div>
+        </section>
 
     <!-- portfolio section starts -->
         <section class="portfolio" id="portfolio">
             <h1 class="heading">My <span>Portfolio</span></h1>
 
             <div class="box-container">
-                <div class="box">
+                <div class="wow animate__animated animate__fadeInTopLeft animate__slow box">
                     <a href="https://prolaundry-fullstack.firebaseapp.com/" target="_blank"><img src="./images/Screenshot_1.png" alt=""></a>
                     <h2>Laundry Service</h2>
                 </div>
                 
 
-                <div class="box">
+                <div class="wow animate__animated animate__fadeInUp animate__slowe box">
                     <a href="https://sunrise-mart-fullstack.firebaseapp.com" target="_blank"><img src="./images/Screenshot_2.png" alt=""></a>
                     <h2>E-Commerce</h2>
                 </div>
                 
 
-                <div class="box">
+                <div class="wow animate__animated animate__fadeInTopRight animate__slow box">
                     <a href="https://react-authentication-project.netlify.app/" target="_blank"><img src="./images/Screenshot_3.png" alt=""></a>
                     <h2>Vehicle Service</h2>
                 </div>
@@ -177,7 +204,7 @@
             <h1 class="heading"><span>Contact</span> Me</h1>
 
             <div class="row">
-                <div class="content">
+                <div class="wow animate__animated animate__fadeInTopRight animate__slow content">
                     <h3 class="title">Contact Info</h3>
 
                     <div class="info">
@@ -188,7 +215,7 @@
                     </div>
                 </div>
 
-                <form action="">
+                <form class="wow animate__animated animate__fadeInTopLeft animate__slow" action="">
 
                     <input type="text" placeholder="Name" class="box">
                     <input type="email" placeholder="Email" class="box">

@@ -284,6 +284,48 @@ header .navbar ul li a:hover {
     background: var(--yellow);
 }
 
+
+
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+    width: 70%;
+    background-color: #ddd;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.bar-section {
+    margin-top: 70px;
+}
+
+.skill-bar p {
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    left: 16%;
+    margin-top: 1.8rem;
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 7px; 
+  padding-bottom: 7px; 
+  color: white;
+}
+
+.html {width: 93%; background-color: #04AA6D; font-size: 1.5rem;} 
+.css {width: 88%; background-color: #2196F3; font-size: 1.5rem;} 
+.js {width: 85%; background-color: #f44336; font-size: 1.5rem;} 
+.php {width: 80%; background-color: #145dfa; font-size: 1.5rem;} 
+
+
+
+
+
 .portfolio .box-container {
     display: flex;
     align-items: center;
